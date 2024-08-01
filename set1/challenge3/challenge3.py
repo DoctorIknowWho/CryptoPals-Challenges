@@ -1,3 +1,6 @@
+	
+
+
 def singe_byte_xor_cipher(hex_encoded_string):
     #convert hex string to bytes
     
@@ -19,7 +22,7 @@ def singe_byte_xor_cipher(hex_encoded_string):
 			decoded += chr(byte ^ ord(k))
 
 		#calculate the score of the decoded string
-		common_chars = '/[ETAOIN SHRDLU]'
+		common_chars = '/[ETAOINSHRDLU] etaoinsrhdlu'
 		decoded_scores.append((decoded, sum(decoded.count(c) for c in common_chars), k))
 
 	#sort the decoded strings by the score
@@ -27,5 +30,5 @@ def singe_byte_xor_cipher(hex_encoded_string):
 
 	return decoded_scores[0]
 
-user_input = input("Enter a hex encoded string: ")
-print(singe_byte_xor_cipher(user_input))
+# user_input = input("Enter a hex encoded string: ")
+# print(singe_byte_xor_cipher(user_input))
