@@ -25,7 +25,6 @@ def fixed_xor(buffer1, buffer2):
 
     return hex_xored
 
-user_input = input("Enter a string: ")
-user_input2 = input("Enter another string: ")
-
-print(fixed_xor(user_input, user_input2))
+#user_input = input("Enter a string: ")
+#user_input2 = input("Enter another string: ")
+#print(fixed_xor(user_input, user_input2))
